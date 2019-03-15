@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "ss",
+      "age": 1,
+      "dob": "01/11/1997",
+      "pass": "123",
+      "cpass": "123",
+      "email": "aawww@gmail.com"
+    },
+    {
+      "id": "52",
+      "name": "rajat",
+      "age": "22",
+      "dob": "2020-02-01",
+      "pass": "rajat",
+      "cpass": "rajat",
+      "email": "rajat@gmail.com"
+    }
+  ]
+}

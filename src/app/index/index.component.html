@@ -1,0 +1,52 @@
+<div *ngIf="!lc.login">
+
+  <header>
+    <nav>
+      <h1>3 Musketeers Bank</h1>
+      <ul class="nav1">
+        <li><a routerLink="" class="homeblack">Home</a> </li>
+        <div class="dropdown">
+          
+        </div>
+        <li><a class="homeblack" href="#">News</a></li>
+        <li><a class="homeblack" href="#">About</a></li>
+        <li><a class="homeblack" href="#">Contact Us</a></li>
+      </ul>
+      <ul class="nav2">
+        <li><a routerLink="login" class="homeblack" >Login</a></li>
+        <li></li>
+        <li><a routerLink="register" class="homeblack"  >Register</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+</div>
+
+
+
+<div *ngIf="lc.login">
+<header>
+  <nav>
+    <h1>3 Musketeers Bank</h1>
+    <ul class="nav1">
+      <li><a routerLink="" class="homeblack">Home</a> </li>
+      <div class="dropdown">
+        
+      </div>
+      <li><a class="homeblack" href="#">News</a></li>
+      <li><a class="homeblack" href="#">About</a></li>
+      <li><a class="homeblack" href="#">Contact Us</a></li>
+    </ul>
+    <ul class="nav2">
+      <li><a routerLink="service" class="homeblack">services</a></li>
+      <li></li>
+      <li><button type="button" class="homeblack"  (click)="toggle()">logout</button>+</li>
+      
+    </ul>
+  </nav>
+</header>
+</div>
+
+
+
+

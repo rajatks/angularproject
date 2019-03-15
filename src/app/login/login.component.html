@@ -1,0 +1,7 @@
+
+<form class="container" [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+  Enter Id:<input type="text"  name="id" placeholder="Enter Id" formControlName="userid"><br>
+  Enter password:<input type="password"  name="firstname" placeholder="Enter Name" formControlName="pass1"><br>
+  <input type="submit" value="SUBMIT" [disabled]="!form.valid">
+  <br><br>
+ </form>
