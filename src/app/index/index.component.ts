@@ -10,15 +10,21 @@ import { RestService } from '../rest.service';
 })
 export class IndexComponent implements OnInit {
 
+  disp1 : boolean = true;
+  disp2 : boolean = false;
   constructor(private route:Router,private restservice:RestService,private lc:LogincheckService) { }
 
   ngOnInit() {
   }
-  disp1:boolean=true;
-  disp2:boolean=false;
+  
  toggle()
  {
   this.lc.setlogin(false);
   this.route.navigate([''])
+ }
+
+ toggle1() :  void{
+  this.disp1 =!this.disp1;
+  this.disp2 =!this.disp2;
  }
 }

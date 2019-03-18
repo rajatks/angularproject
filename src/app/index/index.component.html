@@ -1,3 +1,4 @@
+<body background="./assets/img/banking.jpg">
 <div *ngIf="!lc.login">
 
   <header>
@@ -5,9 +6,7 @@
       <h1>3 Musketeers Bank</h1>
       <ul class="nav1">
         <li><a routerLink="" class="homeblack">Home</a> </li>
-        <div class="dropdown">
-          
-        </div>
+       
         <li><a class="homeblack" href="#">News</a></li>
         <li><a class="homeblack" href="#">About</a></li>
         <li><a class="homeblack" href="#">Contact Us</a></li>
@@ -19,9 +18,9 @@
         
       </ul>
     </nav>
+
   </header>
 </div>
-
 
 
 <div *ngIf="lc.login">
@@ -47,6 +46,8 @@
 </header>
 </div>
 
+<router-outlet></router-outlet>
+</body>
 
 
 

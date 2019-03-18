@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { ServiceComponent } from './service/service.component';
 import { LogoutComponent } from './logout/logout.component';
 import { LogincheckService } from './logincheck.service';
+import { EmployeeComponent } from './employee/employee.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LogincheckService } from './logincheck.service';
     RegisterComponent,
     LoginComponent,
     ServiceComponent,
-    LogoutComponent
+    LogoutComponent,
+    EmployeeComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,6 @@ import { LogincheckService } from './logincheck.service';
     HttpModule
   ],
   providers: [RestService,LogincheckService],
-  bootstrap: [AppComponent]
+  bootstrap: [IndexComponent]
 })
 export class AppModule { }

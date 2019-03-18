@@ -44,7 +44,7 @@ export class RegisterComponent implements OnInit {
   }
   onSubmit(myform)
   {
-    console.log('hello');
+    
     let register1=new Register(myform.id,myform.name,myform.age,myform.dob,myform.pass,myform.cpass,myform.email)
     this.restservice.postuser(register1)
     .subscribe(
